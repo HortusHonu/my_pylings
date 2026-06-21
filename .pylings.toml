@@ -1,0 +1,12 @@
+[workspace]
+version = "1.3.0"
+firsttime = false
+current_exercise = "03_functions/functions4.py"
+
+[theme]
+name = "default"
+GREEN = "bold green"
+RED = "bold red"
+ORANGE = "bold orange"
+LIGHT_BLUE = "bold lightblue"
+BACKGROUND = "#1e1e2e"
