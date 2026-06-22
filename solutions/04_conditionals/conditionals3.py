@@ -6,24 +6,22 @@ Uncomment and complete each section to pass all tests.
 """
 
 # === COMPOUND IF STATEMENT FUNCTION ===
-# TODO: Modify the function so that it checks if a number is within a specific range and if it's even
+# TODO: Check if a number is within a specific range and if it's even
 
 def check_number_properties(number):
-     # TODO: Replace __ with conditions to check if number is between 1 and 100 AND even
-    if number >= 1 and number <= 100 and number % 2 == 0: 
+    if number >= 1 and number <= 100 and number % 2 == 0:
         return "Number is within range and even"
-    # TODO: Check if the number is within range but odd
-    elif number >= 1 and number <= 100:  
+    elif number >= 1 and number <= 100:
         return "Number is within range but odd"
     else:
         return "Number is out of range"
 
 # === NESTED IF STATEMENT FUNCTION ===
-# TODO: Modify the function so that checks user role and permissions
+# Solution: Check user role and permissions
 
 def check_user_access(role, is_logged_in):
     if role == "admin":
-        if is_logged_in:  
+        if is_logged_in:
             return "Admin access granted"
         else:
             return "Admin not logged in"
@@ -34,6 +32,8 @@ def check_user_access(role, is_logged_in):
             return "User not logged in"
     else:
         return "Access denied"
+
+# Call the functions with various inputs to test all conditions
 
 # === TESTS ===
 # Call the functions with various inputs to test all conditions
@@ -64,4 +64,5 @@ assert result_seven == "User not logged in", f"[FAIL] Expected 'User not logged 
 result_eight = check_user_access("guest", True)
 assert result_eight == "Access denied", f"[FAIL] Expected 'Access denied', got '{result_eight}'"
 
-print(f"\n{result_one}\n{result_two}\n{result_three}\n{result_four}\n{result_five}\n{result_six}\n{result_seven}\n{result_eight}.")
+print(f"\n{result_one}\n{result_two}\n{result_three}\n{result_four}\n{
+    result_five}\n{result_six}\n{result_seven}\n{result_eight}.")

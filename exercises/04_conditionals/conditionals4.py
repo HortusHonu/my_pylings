@@ -13,7 +13,17 @@ Available from Python 3.10 onwards.
 # - Any other value: "Unknown Status"
 
 def http_status(code: int) -> str:
-    pass
+    match code:
+        case 200:
+            return "OK"
+        case 301:
+            return "Moved Permanently"
+        case 404:
+            return "Not Found"
+        case 500:
+            return "Internal Server Error"
+        case _:
+            return "Unknown Status"
 
 # === TESTS ===
 import inspect

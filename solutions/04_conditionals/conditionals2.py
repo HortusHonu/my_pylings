@@ -6,27 +6,27 @@ Uncomment and complete each section to pass all tests.
 """
 
 # === IF-ELIF-ELSE FUNCTION ===
-# TODO: Create a function that classifies a number as positive, negative, or zero
+# Solution: Create a function that classifies a number as positive, negative, or zero
 
 def classify_number(number):
-    if number > 0:  # TODO: Replace __ with the correct condition for positive numbers
+    if number > 0:
         return "Positive"
-    elif number == 0:  # TODO: Replace __ with the correct condition for zero
+    elif number == 0:
         return "Zero"
     else:
         return "Negative"
 
 # === GRADE CLASSIFICATION FUNCTION ===
-# TODO: Create a function that assigns a letter grade based on a score
+# Solution: Create a function that assigns a letter grade based on a score
 
 def assign_grade(score):
-    if score >= 90:  # TODO: Score >= 90
+    if score >= 90:
         return "A"
-    elif score >= 80 :  # TODO: Score >= 80
+    elif score >= 80:
         return "B"
-    elif score >= 70:  # TODO: Score >= 70
+    elif score >= 70:
         return "C"
-    elif score >= 60:  # TODO: Score >= 60
+    elif score >= 60:
         return "D"
     else:
         return "F"
@@ -60,9 +60,7 @@ assert result_seven == "D", f"[FAIL] Expected 'D', got '{result_seven}'"
 result_eight = assign_grade(50)
 assert result_eight == "F", f"[FAIL] Expected 'F', got '{result_eight}'"
 
-print(f"\n{result_one}\n{result_two}\n{result_three}\n{result_four}\n{result_five}\n{result_six}\n{result_seven}\n{result_eight}.")
+print(f"\n{result_one}\n{result_two}\n{result_three}\n{result_four}\n{  
+    result_five}\n{result_six}\n{result_seven}\n{result_eight}.")
 
-# print(f"\n{result_one}\n{result_two}\n{result_three}\n{result_four}\n{  
-#    result_five}\n{result_six}\n{result_seven}\n{result_eight}.")
-
-### This was written incorrectly originally
+### ^^^^^ this will not run because f-strings cannot contain implicit line breaks (word wrap)
