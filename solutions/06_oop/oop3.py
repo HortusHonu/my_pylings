@@ -24,25 +24,24 @@ class Car:
 # Define the ElectricCar subclass below
 class ElectricCar(Car):
     def __init__(self, brand):
-        # TODO: Call the parent class constructor using super()
-        # TODO: Initialize battery_level to 100
+        # Call the parent class constructor using super()
         super().__init__(brand)
+        # Initialize battery_level to 100
         self.battery_level = 100
 
     def accelerate(self, amount):
-        # TODO: Call the parent's accelerate method
-        # TODO: Decrease battery_level by 1% per acceleration
+        # Call the parent's accelerate method
         super().accelerate(amount)
+        # Decrease battery_level by 1% per acceleration
         self.battery_level = max(0, self.battery_level - 1)
-        # self.battery_level -= 1
-    
+
     def brake(self, amount):
         # TODO: Decreases the car's speed by the given amount
         # TODO: Call parents break method
         # TODO: Increase battery_level by 1% per brake
         super().brake(amount)
         self.battery_level = max(100, self.battery_level + 1)
-        # self.battery_level += 1
+        pass
 
     def __str__(self):
         # Return a string showing "brand travelling at speed km/h with battery level% battery"
